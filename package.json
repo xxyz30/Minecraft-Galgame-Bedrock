@@ -1,0 +1,19 @@
+{
+  "name": "galgame-system-mcbe",
+  "version": "1.0.0",
+  "description": "A Gametest based storyline production framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xxyz30/Minecraft-Galgame-Bedrock.git"
+  },
+  "author": "xxyz30",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xxyz30/Minecraft-Galgame-Bedrock/issues"
+  },
+  "homepage": "https://github.com/xxyz30/Minecraft-Galgame-Bedrock#readme"
+}
