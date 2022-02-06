@@ -12,6 +12,7 @@
         "preserveConstEnums": true,
         "sourceMap": false,
         "outDir": "scripts",
+        "resolveJsonModule": true
     },
     "include": [
         "src",

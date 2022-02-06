@@ -17,7 +17,7 @@
             "type": "minecraft-js",
             "request": "attach",
             "name": "Attach to Minecraft",
-            "mode": "connect",
+            "mode": "listen",
             "localRoot": "${workspaceFolder}/",
             "host": "localhost",
             "port": 19144

@@ -1,7 +1,5 @@
-import { world } from "mojang-minecraft";
-import { Parser } from "./GalAPI/parser/parser.js";
-import { storyManager } from "./GalAPI/StoryManager.js";
-let a = {
+//最后的样式
+{
     "stories": [
         //storyLine
         {
@@ -11,18 +9,18 @@ let a = {
                 {
                     "text": "xxx",
                     "speaker": {
-                        "name": "xxx"
+                        "name": "xxx",
+                        "icon": "textures/xxx"
                     },
                     "buttons": [
                         {
                             "text": "button_text",
-                            "jump": "lineId",
-                            "commands": ["say hi"]
+                            "jump": "lineId"
                         }
                     ]
                 }
             ],
-            "next": {
+            "next_node": {
                 "buttons": [
                     {
                         "text": "button_text",
@@ -32,13 +30,4 @@ let a = {
             }
         }
     ]
-};
-storyManager.putStory(Parser.parse(a));
-world.events.beforeChat.subscribe(e => {
-    storyManager.callStory("xxx", e.sender);
-});
-world.events.blockBreak.subscribe(e => {
-    for (let p of world.getPlayers()) {
-        storyManager.callStory("xxx", p);
-    }
-});
+}

@@ -4,7 +4,7 @@
   "description": "A Gametest based storyline production framework",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
