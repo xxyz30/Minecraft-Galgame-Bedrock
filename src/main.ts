@@ -18,33 +18,25 @@ let a: Story =
                     },
                     "buttons": [
                         {
-                            "text": "button_text",
-                            "jump": "lineId",
+                            "text": "循环测试",
+                            "jump": "xxx",
                             "commands": ["say hi"]
                         }
                     ]
                 }
-            ],
-            "next": {
-                "buttons": [
-                    {
-                        "text": "button_text",
-                        "jump": "lineId"
-                    }
-                ]
-            }
+            ]
         }
     ]
 }
 storyManager.putStory(Parser.parse(a))
 
 world.events.beforeChat.subscribe(e => {
-    storyManager.callStory("xxx", e.sender)
-})
-world.events.blockBreak.subscribe(e => {
     for (let p of world.getPlayers()) {
         storyManager.callStory("xxx", <Player>p)
     }
+})
+world.events.blockBreak.subscribe(e => {
+    storyManager.callStory("xxx", e.player)
 })
 
 

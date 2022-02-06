@@ -1,4 +1,3 @@
-import { StoryNode } from "./StoryNode.js";
 import { StoryTextItem } from "./StoryTextItem.js";
 
 //一条故事线
@@ -8,6 +7,4 @@ export class StoryLine {
     public id: string
     //故事线的文本
     public texts: StoryTextItem[]
-    //下一个故事节点
-    public next?: StoryNode
 }
